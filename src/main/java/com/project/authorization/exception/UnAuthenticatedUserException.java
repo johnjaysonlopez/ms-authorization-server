@@ -1,4 +1,4 @@
-package com.project.exception;
+package com.project.authorization.exception;
 
 public class UnAuthenticatedUserException extends RuntimeException {
 

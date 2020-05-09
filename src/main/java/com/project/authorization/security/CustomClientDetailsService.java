@@ -1,4 +1,4 @@
-package com.project.security;
+package com.project.authorization.security;
 
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;

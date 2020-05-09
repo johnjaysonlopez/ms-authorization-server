@@ -1,4 +1,4 @@
-package com.project.configuration;
+package com.project.authorization.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -41,7 +41,7 @@ public class SwaggerUiConfiguration {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.forCodeGeneration(Boolean.TRUE)
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.project.api"))
+				.apis(RequestHandlerSelectors.basePackage("com.project.authorization.api"))
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(this.metaData());

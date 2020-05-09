@@ -1,4 +1,4 @@
-package com.project.service;
+package com.project.authorization.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,9 +16,9 @@ import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
 import org.springframework.stereotype.Service;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 
-import com.project.exception.UnAuthenticatedUserException;
-import com.project.security.CustomAuthenticationProvider;
-import com.project.security.CustomClientDetailsService;
+import com.project.authorization.exception.UnAuthenticatedUserException;
+import com.project.authorization.security.CustomAuthenticationProvider;
+import com.project.authorization.security.CustomClientDetailsService;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

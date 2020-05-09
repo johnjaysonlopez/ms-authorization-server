@@ -1,4 +1,4 @@
-package com.project.oauth2;
+package com.project.authorization.oauth2;
 
 import javax.sql.DataSource;
 
@@ -17,8 +17,8 @@ import org.springframework.security.oauth2.provider.error.OAuth2AccessDeniedHand
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 
-import com.project.security.CustomClientDetailsService;
-import com.project.security.CustomUserDetailsService;
+import com.project.authorization.security.CustomClientDetailsService;
+import com.project.authorization.security.CustomUserDetailsService;
 
 @Configuration
 @EnableAuthorizationServer
