@@ -52,6 +52,7 @@ public class SecurityConfigurer extends WebSecurityConfigurerAdapter {
 		.antMatchers("/health").permitAll()
 		.antMatchers("/actuator/**").permitAll()
 		.antMatchers("/authentication").permitAll()
+		.antMatchers("/authentication/refresh").permitAll()
 		.anyRequest().authenticated();
 	}
 

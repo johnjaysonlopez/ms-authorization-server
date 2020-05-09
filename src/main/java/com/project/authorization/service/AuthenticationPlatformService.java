@@ -73,4 +73,29 @@ public class AuthenticationPlatformService {
 		return oauth2AccessToken;
 	}
 
+	public OAuth2AccessToken authenticate(final String refreshtoken) {
+		ClientDetails clientDetails = this.clientDetailsService.loadClientByClientId("project-web-application");
+		if (clientDetails == null) throw new BadClientCredentialsException();
+
+		final Map<String, String> parameters = new HashMap<String, String>();
+		parameters.put("client_id", clientDetails.getClientId());
+		parameters.put("client_secret", clientDetails.getClientSecret());
+		parameters.put("grant_type", "refresh_token");
+		parameters.put("refresh_token", refreshtoken);
+
+		final Authentication clientAuthentication = new UsernamePasswordAuthenticationToken(
+				new User(clientDetails.getClientId(), clientDetails.getClientSecret(), 
+						true, true, true, true, clientDetails.getAuthorities()), null, new ArrayList<GrantedAuthority>());
+
+		OAuth2AccessToken oauth2AccessToken = null;
+
+		try {
+			oauth2AccessToken = this.tokenEndpoint.postAccessToken(clientAuthentication, parameters).getBody();
+		} catch (HttpRequestMethodNotSupportedException e) {
+			log.info(e.getMessage());
+		}
+
+		return oauth2AccessToken;
+	}
+
 }
