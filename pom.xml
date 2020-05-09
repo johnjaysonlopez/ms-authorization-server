@@ -11,7 +11,7 @@
 		<relativePath />
 	</parent>
 
-	<groupId>com.meteor.project</groupId>
+	<groupId>com.project</groupId>
 	<artifactId>authorization-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Authorization Server</name>
@@ -83,7 +83,7 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.meteor.project</groupId>
+			<groupId>com.project</groupId>
 			<artifactId>base-common-resource</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

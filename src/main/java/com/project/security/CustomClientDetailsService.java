@@ -1,11 +1,11 @@
-package com.meteor.project.security;
+package com.project.security;
 
 import org.springframework.security.oauth2.provider.ClientDetails;
 import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.ClientRegistrationException;
 import org.springframework.stereotype.Service;
 
-import com.meteor.project.base.common.resource.client.ClientRepository;
+import com.project.base.common.resource.client.ClientRepository;
 
 import lombok.AllArgsConstructor;
 

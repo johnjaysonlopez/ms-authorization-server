@@ -1,4 +1,4 @@
-package com.meteor.project.security;
+package com.project.security;
 
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -8,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 import org.springframework.stereotype.Component;
 
-import com.meteor.project.base.common.resource.user.User;
+import com.project.base.common.resource.user.User;
 
 import lombok.AllArgsConstructor;
 

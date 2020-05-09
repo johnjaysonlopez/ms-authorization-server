@@ -1,4 +1,4 @@
-package com.meteor.project;
+package com.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 @SpringBootApplication
 @EntityScan(basePackages = {
-		"com.meteor.project.base.common.resource.client",
-		"com.meteor.project.base.common.resource.permission",
-		"com.meteor.project.base.common.resource.role",
-		"com.meteor.project.base.common.resource.user"})
+		"com.project.base.common.resource.client",
+		"com.project.base.common.resource.permission",
+		"com.project.base.common.resource.role",
+		"com.project.base.common.resource.user"})
 public class MsAuthorizationServerApplication {
 
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.meteor.project.service;
+package com.project.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -16,9 +16,9 @@ import org.springframework.security.oauth2.provider.endpoint.TokenEndpoint;
 import org.springframework.stereotype.Service;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 
-import com.meteor.project.exception.UnAuthenticatedUserException;
-import com.meteor.project.security.CustomAuthenticationProvider;
-import com.meteor.project.security.CustomClientDetailsService;
+import com.project.exception.UnAuthenticatedUserException;
+import com.project.security.CustomAuthenticationProvider;
+import com.project.security.CustomClientDetailsService;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

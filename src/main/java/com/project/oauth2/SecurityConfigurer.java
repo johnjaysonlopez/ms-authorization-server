@@ -1,4 +1,4 @@
-package com.meteor.project.oauth2;
+package com.project.oauth2;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -10,8 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.meteor.project.security.CustomAuthenticationProvider;
-import com.meteor.project.security.CustomUserDetailsService;
+import com.project.security.CustomAuthenticationProvider;
+import com.project.security.CustomUserDetailsService;
 
 @Configuration
 @EnableWebSecurity

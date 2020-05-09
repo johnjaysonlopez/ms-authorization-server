@@ -1,4 +1,4 @@
-package com.meteor.project.exception;
+package com.project.exception;
 
 public class UnAuthenticatedUserException extends RuntimeException {
 
