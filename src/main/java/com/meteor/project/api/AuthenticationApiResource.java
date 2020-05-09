@@ -13,7 +13,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.AllArgsConstructor;
 
-@Api(value = "Authentication HTTP Basic")
+@Api(value = "Authentication")
 @RestController
 @RequestMapping("/authentication")
 @AllArgsConstructor
@@ -23,7 +23,7 @@ public class AuthenticationApiResource {
 
 
 	@PostMapping
-	@ApiOperation(value = "Verify authentication", notes = "Authenticates the credentials provided and returns the set roles and permissions allowed.")
+	@ApiOperation(value = "Verify authentication", notes = "Authenticates the credentials provided and returns an OAuth2 access token.")
 	public OAuth2AccessToken authenticate(
 			@RequestParam("username") @ApiParam(value = "username") final String username, 
 			@RequestParam("password") @ApiParam(value = "password") final String password) {
