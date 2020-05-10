@@ -5,7 +5,7 @@ import org.springframework.security.oauth2.provider.ClientDetailsService;
 import org.springframework.security.oauth2.provider.ClientRegistrationException;
 import org.springframework.stereotype.Service;
 
-import com.project.base.common.resource.client.ClientRepository;
+import com.project.base.common.resources.client.ClientRepository;
 
 import lombok.AllArgsConstructor;
 

@@ -8,7 +8,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.common.exceptions.OAuth2Exception;
 import org.springframework.stereotype.Component;
 
-import com.project.base.common.resource.user.User;
+import com.project.base.common.resources.user.User;
 
 import lombok.AllArgsConstructor;
 

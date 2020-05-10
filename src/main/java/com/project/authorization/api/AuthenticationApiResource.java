@@ -25,16 +25,18 @@ public class AuthenticationApiResource {
 	@PostMapping
 	@ApiOperation(value = "Resource owner password credentials grant", notes = "Authenticates the credentials provided and returns an OAuth2 access token.")
 	public OAuth2AccessToken authenticate(
+			@RequestParam("clientid") @ApiParam(value = "clientid") final String clientid,
 			@RequestParam("username") @ApiParam(value = "username") final String username, 
 			@RequestParam("password") @ApiParam(value = "password") final String password) {
-		return this.authenticationPlatformService.authenticate(username, password);
+		return this.authenticationPlatformService.authenticate(clientid, username, password);
 	}
 
 	@PostMapping("/refresh")
 	@ApiOperation(value = "Refresh token grant", notes = "Authenticates the refresh token provided and returns an OAuth2 access token.")
 	public OAuth2AccessToken authenticate(
+			@RequestParam("clientid") @ApiParam(value = "clientid") final String clientid,
 			@RequestParam("refreshtoken") @ApiParam(value = "refreshtoken") final String refreshtoken) {
-		return this.authenticationPlatformService.authenticate(refreshtoken);
+		return this.authenticationPlatformService.authenticate(clientid, refreshtoken);
 	}
 
 }
